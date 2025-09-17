@@ -36,6 +36,12 @@ android {
             path 'CMakeLists.txt'
         }
     }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
